@@ -2,6 +2,8 @@
 
 A simple little thing I made to organize things hierarchically and put it up online
 
+Very basic styling, just plain CSS.
+
 ## Overview
 
 Provides a framework for loading an XML formatted "treedoc" that describes a nesting of articles/information
