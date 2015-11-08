@@ -1,0 +1,61 @@
+<treedoc>
+    <name>
+        Category name
+    </name>
+    <item name='Item name' src='/item.md' format='markdown'>
+        <description>
+            Item description
+        </description>
+    </item>
+    <item name='Inline html' format='html'>
+        <description>
+            Inline formatted, with raw html input
+        </description>
+        <![CDATA[
+            <h1>Header</h1>
+            <p>Paragraph</p>
+            <marquee>Does your browser still support this? Probably not</marquee>
+            <a href="/">Link back to project root</a>
+        ]]>
+    </item>
+    <category name='Category 1'>
+        <description>
+            A category
+        </description>
+        <item name='Sub-item 1'>
+            <description>This item is blank</description>
+        </item>
+        <item name='Sub-item 2' src='/item.md' format='markdown'>
+            <description>
+                Another sub-item
+            </description>
+        </item>
+        <category name='Sub-category'>
+            <item name='Another item' src='/item.md' format='markdown'>
+                <description>
+                    Oh another item what a surprise
+                </description>
+            </item>
+            <item name='Another item II' src='/item.md' format='markdown'>
+                <description>
+                    wow much surprise
+                </description>
+            </item>
+        </category>
+    </category>
+    <category name='Category 2'>
+        <description>
+            Yet another category
+        </description>
+        <item name='Inline formatted item' format='markdown'>
+            <description>
+                The source for this item is in the actual body
+            </description>
+#Inline Formatting
+
+woah inline formatting!
+
+##Another header because this is markdown
+        </item>
+    </category>
+</treedoc>

@@ -1,0 +1,32 @@
+<html ng-app='treedoc'>
+    <head>
+        <base href='/' />
+
+        <script src='/public/lib/jxon/index.js'></script>
+
+        <script src='/public/lib/slug/slug.js'></script>
+        <script src='/public/lib/markdown/lib/markdown.js'></script>
+
+        <script src='/public/lib/angular/angular.min.js'></script>
+        <script src='/public/lib/angular-route/angular-route.min.js'></script>
+        <script src='/public/lib/angular-sanitize/angular-sanitize.min.js'></script>
+        <script src='/public/javascripts/app.js'></script>
+
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+        <link rel='stylesheet' type='text/css' href='/doc/style.css' />
+
+        <!-- TODO change bind template for title to include folder path -->
+        <title ng-bind-template='{{pageTitle}}'></title>
+    </head>
+    <body>
+        <header>
+            <h1 ng-bind='pageTitle'></h1>
+        </header>
+        <div id='main' ng-view>
+
+            <!-- Main template loaded here -->
+
+        </div>
+    </body>
+</html>

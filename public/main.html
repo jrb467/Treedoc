@@ -1,0 +1,8 @@
+<div ng-show='error'>
+    <h2 class='error'>{{error}}</h2>
+</div>
+<div ng-show='!error && !showingItem' class='item' ng-repeat='item in items track by $index' ng-click='clicked($index)'>
+    <h1>{{item.$name}}</h1>
+    <p ng-show='item.description'>{{item.description}}</p>
+</div>
+<div ng-show='!error && showingItem' ng-bind-html='itemData'></div>
